@@ -1,0 +1,67 @@
+/*.main {
+    /*background: url(https://i.pinimg.com/564x/da/d1/83/dad183ca02a9f37e7467a77b87cac16e.jpg) repeat;*/
+    /*background: url(https://i.pinimg.com/564x/dc/5d/5b/dc5d5b56bc50a59871b77e3aac02be6b.jpg) repeat;*/
+    /*background: url(https://i.pinimg.com/564x/b4/0b/ef/b40bef0bfece0666a4a9b27df950db88.jpg) repeat;*/
+    /*background:url(https://i.pinimg.com/564x/1f/33/b9/1f33b9232d425d1b73a1b5c6057ec111.jpg)repeat;*/
+    /*background: #F7F0EA;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+/*}*/
+/*.main {
+    background: #F7F0EA url('https://i.pinimg.com/564x/6c/60/eb/6c60eb495294a1f7ba7c7224a3d20857.jpg') center center no-repeat;
+    background-size: cover;
+}*/
+
+.main {
+    background: #F7F0EA;
+    position: relative;
+}
+
+.main::before {
+    content: '';
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 450px; /* Ancho deseado de la imagen */
+    height: 450px; /* Altura deseada de la imagen */
+    background: url('/img/m.png') center center no-repeat;
+    object-fit: contain;
+    object-position: bottom right;
+    background-size:contain; /* Ajusta según tus necesidades */
+}
+
+.main::after {
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 450px; /* Ancho deseado de la imagen */
+    height: 450px; /* Altura deseada de la imagen */
+    background: url('/img/m.png') center center no-repeat;
+    object-fit: contain;
+    object-position: bottom left;
+    background-size:contain; /* Ajusta según tus necesidades */
+    transform: scaleX(-1); /* Rotación horizontal */
+}
+
+
+
+.signin{
+    width: 30%;
+}
+
+.pan{
+    position: relative;
+    display:block;
+    margin:auto;
+    width: 350px; /* Ancho deseado de la imagen */
+    height: 350px; /* Altura deseada de la imagen */  
+}
+
+.harina{
+    position: relative;
+    display:block;
+    margin:auto;
+    width: 350px; /* Ancho deseado de la imagen */
+    height: 350px; /* Altura deseada de la imagen */  
+}

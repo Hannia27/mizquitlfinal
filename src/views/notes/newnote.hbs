@@ -1,0 +1,27 @@
+<div class="jumbotron mt-4">
+    <h3 align="center">COMENTARIOS</h3>
+    <br>
+    <div class="col-md-9 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                <br>
+                <h5>Déjanos un comentario.</h5>
+                <br>
+            </div>
+            <div class="card-body">
+                <form action="/notes/newnote" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="title" class="form-control" placeholder="Correo electrónico." autofocus>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="description" class="form-control" placeholder="Comentario"></textarea>
+                    </div>
+                    <div class="form-group" style="display: flex; justify-content: center;">
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
